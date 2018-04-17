@@ -129,4 +129,4 @@ HISTSIZE=10000
 HISTFILESIZE=10000
 
 #add PATH
-export PATH="$PATH:~/bin"
+export PATH="$PATH:~/bin:~/git/my_file/workstation/bin"
