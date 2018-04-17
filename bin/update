@@ -1,0 +1,6 @@
+#!/bin/bash
+
+printf "READY TO UPDATE"
+sudo apt update
+printf "\nREADY TO UPGRADE"
+sudo apt upgrade
