@@ -1,4 +1,4 @@
 #!/bin/bash
 
-mv ~/git/my_file/my_work/linux_shell_blah_blah/bash/bash_aliases.txt ~/
+mv ~/git/my_file/workstation/linux_shell_blah_blah/bash/bash_aliases.txt ~/
 cd ~/ ; mv bash_aliases.txt .bash_aliases

@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cp ~/.bash_aliases ~/bash_aliases.txt
-mv ~/bash_aliases.txt ~/git/my_file/my_work/linux_shell_blah_blah/bash/
+mv ~/bash_aliases.txt ~/git/my_file/workstation/linux_shell_blah_blah/bash/
