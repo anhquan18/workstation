@@ -12,7 +12,7 @@ set smartcase    "try to be smart when search"
 set hlsearch     "hight light search result"
 set incsearch    "make search act like search in modern browser"
 syntax enable    "enable syntax"
-set so=30        "set lines between cursor and bar at least be 6"
+set so=31        "set lines between cursor and bar at least be 6"
 set backspace=indent,eol,start
 
 nmap <CR><CR> :wq<CR>
@@ -45,6 +45,7 @@ if dein#load_state('/home/nguyen/.vim/bundles')
     call dein#add('Shougo/neosnippet-snippets')
     call dein#add('Shougo/neocomplete.vim')
     call dein#add('tpope/vim-fugitive')
+    call dein#add('Yggdroot/indentLine')
 
     " You can specify revision/branch/tag.
 "    call dein#add('Shougo/deol.nvim', { 'rev': 'a1b5108fd' })
