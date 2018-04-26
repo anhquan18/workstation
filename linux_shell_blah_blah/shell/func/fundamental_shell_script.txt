@@ -65,7 +65,7 @@
     Till now we have used many kind of argument for the command line in shell like file, output,dir.
     Shell treats all of them as the position argument, shell's var. All of them stand in order like
     this : ./argument.sh aaa bbb ccc
-                    $0         $1  $2  $3
+               $0         $1  $2  $3
      The $0 is one of the special argument, try the file outside(you can also try the * to see it)
      And you can know the number of position you have been inputed in shell script by echo the 
      special var '$#' in the last line of shell script

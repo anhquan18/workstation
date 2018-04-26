@@ -14,12 +14,12 @@ set incsearch    "make search act like search in modern browser"
 syntax enable    "enable syntax"
 set so=31        "set lines between cursor and bar at least be 6"
 set backspace=indent,eol,start
+set completeopt-=preview
 
-nmap <CR><CR> :wq<CR>
 nmap tt :terminal<CR>
 nmap sp :split<CR>
 nmap vp :vsplit<CR>
-nnoremap ww <C-w><C-w>
+nnoremap nw <C-w><C-w>
 nnoremap wp <C-w>p
 nmap ND :NERDTree<CR>
 
