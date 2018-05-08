@@ -1,0 +1,2 @@
+sudo ufw status # check your fierwall status
+sudo ufw enable # enable your firewall
