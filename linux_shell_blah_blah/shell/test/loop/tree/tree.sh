@@ -3,16 +3,16 @@
 find_file ()
 {
     local file_path=$1
-    printf "Inside dir $file_path is $(ls $file_path)\n"
-
-    if [ -d $file_path ]; then
-        for f_name in $(ls $file_path)
-        do
-            if [ -d ${file_path}/${f_name} ]; then 
-                find_file ${file_path}/${f_name}
-            fi
-        done
-    fi
+    printf "inside ${file_path##*/} dir is: "
+       
+    for f_name in $(ls $file_path)
+    do
+        if [ -d ${file_path}/${f_name} ]; then 
+            find_file ${file_path}/${f_name}
+        else
+            echo $f_name
+        fi
+    done
 }
 
 find_file $1
