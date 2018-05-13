@@ -1,0 +1,91 @@
+  PID TTY      STAT   TIME COMMAND
+  916 ?        Ss     0:00 /lib/systemd/systemd --user
+  917 ?        S      0:00 (sd-pam)
+  944 ?        SLl    0:01 /usr/bin/gnome-keyring-daemon --daemonize --login
+  952 tty1     Ssl+   0:00 /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
+  954 tty1     Sl+    4:32 /usr/lib/xorg/Xorg vt1 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+  961 ?        Ss     0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+  964 tty1     Sl+    0:00 /usr/lib/gnome-session/gnome-session-binary --session=ubuntu
+ 1039 ?        Ss     0:00 /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu gnome-session --session=ubuntu
+ 1042 ?        Ssl    0:00 /usr/lib/gvfs/gvfsd
+ 1047 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes
+ 1055 ?        Ssl    0:00 /usr/lib/at-spi2-core/at-spi-bus-launcher
+ 1060 ?        S      0:12 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+ 1062 ?        Sl     0:05 /usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session
+ 1079 tty1     Sl+    8:54 /usr/bin/gnome-shell
+ 1111 ?        S<l    0:01 /usr/bin/pulseaudio --start --log-target=syslog
+ 1129 tty1     Sl     0:42 ibus-daemon --xim --panel disable
+ 1133 tty1     Sl     0:00 /usr/lib/ibus/ibus-dconf
+ 1135 tty1     Sl     0:00 /usr/lib/ibus/ibus-x11 --kill-daemon
+ 1138 ?        Sl     0:00 /usr/lib/ibus/ibus-portal
+ 1149 ?        Sl     0:00 /usr/lib/gnome-shell/gnome-shell-calendar-server
+ 1153 ?        Ssl    0:00 /usr/lib/evolution/evolution-source-registry
+ 1161 ?        Sl     0:00 /usr/lib/gnome-online-accounts/goa-daemon
+ 1171 ?        Sl     0:00 /usr/lib/gnome-online-accounts/goa-identity-service
+ 1181 ?        Sl     0:00 /usr/lib/dconf/dconf-service
+ 1184 ?        Ssl    0:00 /usr/lib/gvfs/gvfs-udisks2-volume-monitor
+ 1191 ?        Ssl    0:00 /usr/lib/gvfs/gvfs-mtp-volume-monitor
+ 1195 ?        Ssl    0:00 /usr/lib/gvfs/gvfs-afc-volume-monitor
+ 1200 ?        Ssl    0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+ 1204 ?        Ssl    0:00 /usr/lib/gvfs/gvfs-goa-volume-monitor
+ 1210 tty1     Sl+    0:01 /usr/lib/gnome-settings-daemon/gsd-power
+ 1212 tty1     Sl+    0:00 /usr/lib/gnome-settings-daemon/gsd-print-notifications
+ 1216 tty1     Sl+    0:00 /usr/lib/gnome-settings-daemon/gsd-rfkill
+ 1221 tty1     Sl+    0:00 /usr/lib/gnome-settings-daemon/gsd-screensaver-proxy
+ 1229 tty1     Sl+    0:03 /usr/lib/gnome-settings-daemon/gsd-sharing
+ 1235 tty1     Sl+    0:00 /usr/lib/gnome-settings-daemon/gsd-sound
+ 1239 tty1     Sl+    0:00 /usr/lib/gnome-settings-daemon/gsd-xsettings
+ 1242 tty1     Sl+    0:00 /usr/lib/gnome-settings-daemon/gsd-smartcard
+ 1243 tty1     Sl+    0:00 /usr/lib/gnome-settings-daemon/gsd-wacom
+ 1247 tty1     Sl+    0:00 /usr/lib/gnome-settings-daemon/gsd-clipboard
+ 1248 tty1     Sl+    0:00 /usr/lib/gnome-settings-daemon/gsd-a11y-settings
+ 1251 tty1     Sl+    0:00 /usr/lib/gnome-settings-daemon/gsd-datetime
+ 1255 tty1     Sl+    0:04 /usr/lib/gnome-settings-daemon/gsd-color
+ 1257 tty1     Sl+    0:00 /usr/lib/gnome-settings-daemon/gsd-keyboard
+ 1259 tty1     Sl+    0:01 /usr/lib/gnome-settings-daemon/gsd-housekeeping
+ 1263 tty1     Sl+    0:00 /usr/lib/gnome-settings-daemon/gsd-mouse
+ 1266 tty1     Sl+    0:00 /usr/lib/gnome-settings-daemon/gsd-media-keys
+ 1282 tty1     Sl+    0:00 /usr/lib/gnome-settings-daemon/gsd-printer
+ 1318 tty1     SLl+   0:03 /usr/bin/gnome-software --gapplication-service
+ 1320 tty1     Sl+    0:00 /usr/lib/gnome-disk-utility/gsd-disk-utility-notify
+ 1327 tty1     Sl+    0:00 python3 /usr/lib/gnome-tweak-tool/gnome-tweak-tool-lid-inhibitor
+ 1334 tty1     Sl+    0:03 nautilus-desktop
+ 1343 ?        Sl     0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.7 /org/gtk/gvfs/exec_spaw/0
+ 1353 ?        Ssl    0:00 /usr/lib/evolution/evolution-calendar-factory
+ 1378 ?        Sl     0:00 /usr/lib/evolution/evolution-calendar-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.Calendarx1353x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/Calendar/1353/2
+ 1381 tty1     Sl     0:13 /usr/lib/ibus/ibus-engine-simple
+ 1394 ?        Ssl    0:00 /usr/lib/evolution/evolution-addressbook-factory
+ 1405 ?        Sl     0:00 /usr/lib/evolution/evolution-addressbook-factory-subprocess --factory all --bus-name org.gnome.evolution.dataserver.Subprocess.Backend.AddressBookx1394x2 --own-path /org/gnome/evolution/dataserver/Subprocess/Backend/AddressBook/1394/2
+ 1495 ?        Ssl    0:00 /usr/lib/glib-networking//glib-pacrunner
+ 1654 tty1     Sl     0:00 /usr/lib/ibus-mozc/ibus-engine-mozc --ibus
+ 1657 tty1     SLl    0:00 /usr/lib/mozc/mozc_server
+ 1690 tty1     SLl+   4:58 /opt/google/chrome/chrome
+ 1696 tty1     S+     0:00 cat
+ 1697 tty1     S+     0:00 cat
+ 1700 tty1     S+     0:00 /opt/google/chrome/chrome --type=zygote --enable-crash-reporter=,
+ 1701 tty1     S+     0:00 /opt/google/chrome/nacl_helper
+ 1704 tty1     S+     0:00 /opt/google/chrome/chrome --type=zygote --enable-crash-reporter=,
+ 1734 tty1     Sl+    3:21 /opt/google/chrome/chrome --type=gpu-process --field-trial-handle=9876449117537619106,198199849107268547,131072 --enable-crash-reporter=, --gpu-preferences=KAAAAAAAAACAAACAAQAAAAAAAAAAAGAAEAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA --enable-crash-reporter=, --service-request-channel-token=97409D0F92FC01EF0E272859A1A31808
+ 1785 tty1     S+     0:00 /opt/google/chrome/chrome --type=-broker
+ 1799 tty1     Sl+    0:01 update-notifier
+ 1871 tty1     Sl+    0:01 /opt/google/chrome/chrome --type=renderer --field-trial-handle=9876449117537619106,198199849107268547,131072 --service-pipe-token=658D82DE1B1AA810278687A38B3CB855 --lang=en-US --enable-crash-reporter=, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --enable-compositor-image-animations --service-request-channel-token=658D82DE1B1AA810278687A38B3CB855 --renderer-client-id=3 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+ 1958 tty1     Sl+    0:20 /opt/google/chrome/chrome --type=renderer --field-trial-handle=9876449117537619106,198199849107268547,131072 --service-pipe-token=3DF6E5ADD8636FCB011D9C666F49C860 --lang=en-US --enable-crash-reporter=, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --enable-compositor-image-animations --service-request-channel-token=3DF6E5ADD8636FCB011D9C666F49C860 --renderer-client-id=4 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+ 1971 tty1     Sl+    0:01 /opt/google/chrome/chrome --type=renderer --field-trial-handle=9876449117537619106,198199849107268547,131072 --service-pipe-token=E15F234E49862FC0860EDF48EE7C044E --lang=en-US --enable-crash-reporter=, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --enable-compositor-image-animations --service-request-channel-token=E15F234E49862FC0860EDF48EE7C044E --renderer-client-id=5 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+ 1983 tty1     Sl+    0:11 /opt/google/chrome/chrome --type=renderer --field-trial-handle=9876449117537619106,198199849107268547,131072 --service-pipe-token=608921BECA96C10E05A9FD197ADD19AA --lang=en-US --enable-crash-reporter=, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --enable-compositor-image-animations --service-request-channel-token=608921BECA96C10E05A9FD197ADD19AA --renderer-client-id=6 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+ 2000 tty1     Sl+    0:12 /opt/google/chrome/chrome --type=renderer --field-trial-handle=9876449117537619106,198199849107268547,131072 --service-pipe-token=7A3D1AB0E0851FA22BFC4B48BF31DCAD --lang=en-US --enable-crash-reporter=, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --enable-compositor-image-animations --service-request-channel-token=7A3D1AB0E0851FA22BFC4B48BF31DCAD --renderer-client-id=7 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+ 2270 tty1     Sl+    0:01 /opt/google/chrome/chrome --type=renderer --field-trial-handle=9876449117537619106,198199849107268547,131072 --service-pipe-token=FC435E41B066DC694F0AF98162880946 --lang=en-US --enable-crash-reporter=, --extension-process --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --enable-compositor-image-animations --service-request-channel-token=FC435E41B066DC694F0AF98162880946 --renderer-client-id=25 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+ 2671 tty1     Sl+    0:00 /opt/google/chrome/chrome --type=utility --field-trial-handle=9876449117537619106,198199849107268547,131072 --lang=en-US --service-sandbox-type=utility --enable-crash-reporter=, --service-request-channel-token=3A20A6E5439783EBEA937B8E63D5534F --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+ 3309 tty1     Sl     0:03 /usr/lib/mozc/mozc_renderer
+ 4474 tty1     Sl+    0:03 /opt/google/chrome/chrome --type=renderer --field-trial-handle=9876449117537619106,198199849107268547,131072 --service-pipe-token=D2EC56479DA0FF115527EEC5FB2E8ABD --lang=en-US --enable-crash-reporter=, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --enable-compositor-image-animations --service-request-channel-token=D2EC56479DA0FF115527EEC5FB2E8ABD --renderer-client-id=86 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+ 7082 ?        S      0:00 /usr/bin/ssh-agent -D -a /run/user/1000/keyring/.ssh
+ 8633 ?        Ssl    0:00 /usr/lib/gvfs/gvfsd-metadata
+ 8733 ?        Ssl    0:15 /usr/lib/gnome-terminal/gnome-terminal-server
+ 8811 pts/1    Ss     0:00 bash
+ 8967 tty1     Sl+    0:13 /opt/google/chrome/chrome --type=renderer --field-trial-handle=9876449117537619106,198199849107268547,131072 --service-pipe-token=3D8018DE785B99F3E011E30B76797600 --lang=en-US --enable-crash-reporter=, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --enable-compositor-image-animations --service-request-channel-token=3D8018DE785B99F3E011E30B76797600 --renderer-client-id=143 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+ 9205 tty1     Sl+    0:15 /opt/google/chrome/chrome --type=renderer --field-trial-handle=9876449117537619106,198199849107268547,131072 --service-pipe-token=AF4F0620A9370EAF66938C0001019D8D --lang=en-US --enable-crash-reporter=, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --enable-compositor-image-animations --service-request-channel-token=AF4F0620A9370EAF66938C0001019D8D --renderer-client-id=147 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+ 9219 tty1     Sl+    0:00 /opt/google/chrome/chrome --type=renderer --field-trial-handle=9876449117537619106,198199849107268547,131072 --service-pipe-token=9F400D1011A33ED5736FB971A69C201D --lang=en-US --enable-crash-reporter=, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --enable-compositor-image-animations --service-request-channel-token=9F400D1011A33ED5736FB971A69C201D --renderer-client-id=148 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+ 9236 tty1     Sl+    0:06 /opt/google/chrome/chrome --type=renderer --field-trial-handle=9876449117537619106,198199849107268547,131072 --service-pipe-token=FD8E9342147361D5220E5273466C28DD --lang=en-US --enable-crash-reporter=, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --enable-compositor-image-animations --service-request-channel-token=FD8E9342147361D5220E5273466C28DD --renderer-client-id=149 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+ 9250 tty1     Sl+    0:01 /opt/google/chrome/chrome --type=renderer --field-trial-handle=9876449117537619106,198199849107268547,131072 --service-pipe-token=EFD75EB2B86764569393B88665C8D15A --lang=en-US --enable-crash-reporter=, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --enable-compositor-image-animations --service-request-channel-token=EFD75EB2B86764569393B88665C8D15A --renderer-client-id=151 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+ 9274 tty1     Sl+    0:00 /opt/google/chrome/chrome --type=renderer --field-trial-handle=9876449117537619106,198199849107268547,131072 --service-pipe-token=5AB4CB864E38BE68D167EE51C8355B1A --lang=en-US --enable-crash-reporter=, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --enable-compositor-image-animations --service-request-channel-token=5AB4CB864E38BE68D167EE51C8355B1A --renderer-client-id=152 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+ 9292 tty1     Sl+    0:00 /opt/google/chrome/chrome --type=renderer --field-trial-handle=9876449117537619106,198199849107268547,131072 --service-pipe-token=952D0F3AD21A88E12D452EA72D01DAD1 --lang=en-US --enable-crash-reporter=, --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-main-frame-before-activation --enable-compositor-image-animations --service-request-channel-token=952D0F3AD21A88E12D452EA72D01DAD1 --renderer-client-id=153 --shared-files=v8_context_snapshot_data:100,v8_natives_data:101
+10705 pts/1    R+     0:00 ps x

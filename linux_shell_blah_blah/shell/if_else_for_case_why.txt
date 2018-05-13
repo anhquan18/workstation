@@ -105,6 +105,8 @@
     -r file         : file exist and is readable file
     -w file         : file exist and is writable file 
     -x file         : file exist and is executable file
+    -n str           : string is not null
+    -z str           : string length is null
     file1 -nt file2 : file 1 updated time is newer than file 2 
     file1 -ot file2 : file 1 upadted time is older than file 2
 

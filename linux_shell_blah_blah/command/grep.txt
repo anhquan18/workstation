@@ -11,8 +11,8 @@
         -i: ignore case (upper A, lower a) and show you all the matching pattern
         -v: show all the things that not match the pattern
 
-     The most efficient way to use grep is use it with other searching command like ps or ls or...
-     Ex: ps aux|grep python
+    The most efficient way to use grep is use it with other searching command like ps or ls or...
+    Ex: ps aux|grep python
             ls -a |grep l*
 
 
@@ -36,7 +36,7 @@
            but it also output something like this borg, sorg to disable the special meaning add \ to 
            the head of the word 
      
-     [] : will help you match some specific character that you want just put them inside the '[]' and
+    [] : will help you match some specific character that you want just put them inside the '[]' and
            it will help you.
            Ex: grep 'm[aeo]th' (it will match math, meth, moth)
                 grep 'm[a-z]th' (match the word m + (any from a to z) + th)
@@ -45,13 +45,13 @@
                 grep 'mail[146]'  just match the one that have 1 or 4 or 6 in it
                 grep '[^123]'     match thing that have 1 or 2 or 3 at the head of line
      
-     $  : stand for the end of the line so if you want to find some .py, .txt, .c, .cpp file just
+    $   : stand for the end of the line so if you want to find some .py, .txt, .c, .cpp file just
            it to the end of the pattern (grep 'py$')
 
-     ^  : stand for the head of the line (add it like this '^pattern' == the pattern is in the head 
+    ^   : stand for the head of the line (add it like this '^pattern' == the pattern is in the head 
            of line)
 
-    *  : stand for the loop matching more than 0 time (Ex: grep 'Be*r' it will match Br, Ber, Beer, 
+    *   : stand for the loop matching more than 0 time (Ex: grep 'Be*r' it will match Br, Ber, Beer, 
            Beeeer, Beeeeeeeeeeeeeer,... ) so it will keep searching for the word star with B and end 
            with r and there are none or many e characters.
            If you want to find the loop of other character as well use grep '[eaoi]*' 
@@ -82,7 +82,7 @@
            Ex: grep 'Ber\{2,\}' will match ouput like this Berrrr, Berr, ...
                 grep '(Beer)\{2,\}' will match output like this BeerBeer, BeerBeer, BeerBeerBeer
 
-     |  : stand for the or expression
+    |  : stand for the or expression
            Ex: grep '(Beer) | (Wine) | (Juice)' will match the output have word Beer or Wine or Juice
 
     {}: can help you limit the loop matching value to the number of times that you want (
@@ -100,3 +100,5 @@
     #####
 
 
+    You can also use grep to look inside many file as well
+    grep pattern file1 file2 file3

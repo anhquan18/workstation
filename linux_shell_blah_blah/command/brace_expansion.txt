@@ -1,0 +1,7 @@
+    brace expansion is a bash's function used to creat a list with number like range in python
+    {<start_num>..<end_num>}
+    
+    Ex: touch file-{1..5}.txt
+        touch {a..e}.txt
+        echo sample.{txt,log,dat}
+        echo sample.{1..100..5} 

@@ -1,0 +1,2 @@
+    Another command to zip and unzip that can zip more efficient than bzip2. And of course it will cost even more time than bzip2
+    Use: just like gzip and bzip2
