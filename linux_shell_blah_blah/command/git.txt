@@ -1,0 +1,7 @@
+    Reset worktree:
+        git checkout HEAD .  
+            # Will reset all the file and dir haven't been committed yet (those were edited, added, deleted), turn them to the original state
+
+        git revert <commit num>
+            # Will delete the commit in the log (useful when you want to delete the bad commit made in the past)
+            # It doesn't actually delete the commit in the past(it will fix them - don't really understand),
