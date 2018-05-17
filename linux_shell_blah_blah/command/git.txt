@@ -4,4 +4,84 @@
 
         git revert <commit num>
             # Will delete the commit in the log (useful when you want to delete the bad commit made in the past)
-            # It doesn't actually delete the commit in the past(it will fix them - don't really understand),
+            # It doesn't actually delete the commit in the past(it will fix them in the present worktree and then create a new commit
+            # which will delete all of the content in the reverted commit- don't really understand),
+
+        git reset --hard <commit num> 
+            # Reset the state of the current branch or worktree to the state of the commit has been reseted
+    
+    Merge:
+        git merge <branch>
+            # Merge a branch into another branch (usually bug fix or new function)
+
+    Delete:
+        git branch -d <branch>
+            # Delete merged branch
+
+        git branch -D <branch>
+            # Delete unmerge branch
+
+    Backup branch:
+        create a.git dir and then: cd to it
+        
+        git --bare init (create init dir for the branch you want to backup)
+        
+        git push <dir_path> <branch_want to backup>:<new name> (if left and right side of the ':' is the same name then can just write the one name without :)
+            # dir_path will be the path of the dir you use to backup the branch
+            # With this even if the old branch history is deleted the backup's history is still remain so you can clone the history back to the main branch as many time as you want
+        
+        git clone <backup_path>
+            # backup_path is the same name as dir_path
+
+        git push <backup_repository_p> <branch_name>
+            # And now you can update the history(worktree) of the backup branch with push
+
+        git remote add <new_name> <backup_r_p>
+            # Every single time the name of the repository is too long to input now you can chane it into a new name
+            # Ex: git remote add origin ~/git/backup_branch
+
+        git remote -v 
+            # Check the names have been given to the remote
+            # So I guest the local repository is the backup of the remote repository as well
+
+    Share repository:
+        git clone repository
+        
+        git add changed_file
+
+        git push repository_name branch name
+            # usually origin
+            
+        git fetch repository_name
+            # The same name as the repository_name the push command used
+            # This command help you download obj and ref from other repositorys (origin) (a little bit like git pull command)
+            # It only download new date from repository but but it doesn't integrate any of this new data into your working files.
+            # So, in the end fetch download the data exist in the remote server but doesn't merge it with your current working files.
+            # Which mean you can use fetch as many time as you want to update the local repository
+
+        git pull
+            # git pull, in contrast, is used with a different goal in mind: to update your current HEAD branch with the latest changes from the remote server. 
+            # This means that pull not only downloads new data; it also directly integrates it into your current working copy files. This has a couple of consequences:
+
+        git branch -r 
+            # Show the remote branch
+            # The local repository and remote repository
+
+        After a long way:
+            1. git fetch : to update your current worktree (local work place)
+            2. git merge : merge the local with the remote repository
+
+            NOW we have git pull will do both fetch and merge for us so normally we will just use pull to update and merge the local worktree at the same time
+
+    Merge:
+        Sometime you can't merge branch to branch because of the conflict
+        Solve this with:
+            1. git diff and then do what ever you can to solve the conflict and then add the conflicted file once more time and push to solve the conflict
+    
+    Manual for git:
+        git command have manual for it as well
+        Ex: man git (show the manual of git and all of the sub command)
+            man git-branch (show the manual of subcommand git branch with all of the options of git branch)
+            man git-log
+            git help (show the guide message)
+            git help log (git help <subcommand> show the help of git log)
