@@ -118,3 +118,4 @@ HISTFILESIZE=10000
 
 #add PATH
 export PATH="$PATH:~/bin:~/git/my_file/workstation/bin"
+export EDITOR='vim'

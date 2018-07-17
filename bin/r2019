@@ -1,0 +1,9 @@
+#!/bin/bash
+
+goal=$(date -d"20190701" +%s)
+current_time=$(date +%s)
+
+seconds_left=$(expr $goal - $current_time)
+days_left=$(expr $seconds_left / 86400)
+
+printf "%s\033[01;34m %d \033[0mdays left\n" 'Only' $days_left
