@@ -1,0 +1,10 @@
+###########
+CONTENT
+###########
+The command that help you immidiately configure the screen frame rates or resolution, rotation, ....
+
+###########
+USAGE
+###########
+Ex: xrandr -s HEIGHTxWIDTH  (change resolution)
+    xrandr -r FRAME_RATE    (change frame rate)
