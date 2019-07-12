@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "moving"
+cd ~/git/LNPR_BOOK_CODES/section_quan/
+ls -l

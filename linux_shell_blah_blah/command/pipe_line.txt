@@ -6,8 +6,8 @@
     command). We use | symbol (pipe) to work with pipe line:
         <command_1> | <command_2> [| <command_3...]
      
-     And the stdout of c1 will be stdin of c2(which is parameter of c2) and if 
-     we have 3 same thing happen
+    And the stdout of c1 will be stdin of c2(which is parameter of c2) and if 
+    we have 3 same thing happen
         Ex: ls -a |grep python
     When you need to see the output of something but it is too long and not fit in
     one window we use pipe_line with less to make it easier to read
