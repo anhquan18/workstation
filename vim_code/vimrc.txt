@@ -18,6 +18,10 @@ set completeopt-=preview
 set cursorline
 hi Cursorline term=bold cterm=bold ctermbg=darkgray guibg=Grey40 
 
+"let &foldcolumn = (&columns - &textwidth)
+"hi VertSplit guifg=bg guibg=NONE gui=NONE
+"execute 'topleft' ((&columns - &textwidth) / 2 - 1) . 'vsplit _paddding_' | wincmd p
+
 nmap tt :terminal<CR>
 nmap sp :split<CR>
 nmap vp :vsplit<CR>
@@ -77,6 +81,10 @@ inoremap <expr><CR>  pumvisible() ? neocomplete#close_popup( ):"<CR>"
 if dein#check_install()
     call dein#install()
 endif
+
+let g:NERDTreeWinSize=50  " Set NERDTree width.
+autocmd VIMEnter * NERDTree .           " Open NERDTree at startup.
+au VimEnter * wincmd l    " Remove focus from NERDTree window at startup.
 
 "End dein Scripts-------------------------
   
