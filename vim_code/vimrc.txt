@@ -26,6 +26,8 @@ nmap tt :terminal<CR>
 nmap sp :split<CR>
 nmap vp :vsplit<CR>
 nmap ND :NERDTree<CR>
+nmap mm <C-w>w
+nmap mp <C-w>p
 
 "dein Scripts-----------------------------
 if &compatible
