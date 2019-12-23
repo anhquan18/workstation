@@ -1,0 +1,17 @@
+#!/bin/bash
+
+list_recursive ()
+{
+    local file_path=$1
+
+    echo "$file_path"
+
+    if [ -d $file_path ]; then 
+        ls $file_path | less
+    fi
+}
+
+# the "/home/nguyen/" will be the pos parameter of the list_recuresive function
+# which mean that the $1 inside list_rec... will be /home/nguyen/
+list_recursive "/home/nguyen/" 
+

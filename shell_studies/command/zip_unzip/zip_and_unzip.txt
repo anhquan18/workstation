@@ -1,0 +1,24 @@
+    A command that create archive file and then zip it after that. Not ussually used in Linux but commonly used in Windows and Mac so you should learn how to use it to 
+    create .zip file. But to use it you need to learn to use both zip and unzip commands. It isn't exist as default in many distribution so you need to install it if not 
+    exist
+
+    Use:
+        ZIP
+        zip -r file_name.zip file_path
+
+        Ex: zip -r tar.zip tar.txt
+            zipinfo file_name.zip    # Check the info inside zip file
+
+
+        UNZIP
+        unzip file_name.zip
+
+
+    Option: 
+        ZIP
+        -r: zip dir and file inside that dir as well (if you don't use -r with zip then it will only zip the dir not the file inside it)
+        -q: not showing the name of file will be zip when the zip command being executed
+        -e: create password for .zip file (can't unzip it without password) Ex: zip -er file_name.zip dir
+
+        UNZIP
+        -q: not display the name of file being extracted

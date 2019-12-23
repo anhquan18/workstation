@@ -1,0 +1,4 @@
+    The command that build and execute command line from standard input
+    Ex: find . -type f -name '*.txt' | xargs ls -l
+        find ~ -type f | xargs grep pattern #execute grep with file which mean the grep command will look inside the file
+        find ~ -type f | grep x_o           # the grep command will search the pattern inside the output
