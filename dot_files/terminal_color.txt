@@ -1,5 +1,5 @@
 text: #F1BB6A
 background: #352F2F
 user: #C1EE2C
-path: #D3FB0
+path: #DC3FB0
 branch: #A88FF7
