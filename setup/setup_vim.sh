@@ -19,9 +19,8 @@ sudo make && sudo make install
 vim --version
 
 # install dein and plugins
-cp ../dot_files/vimrc.txt ~/.vimrc
-cd ~ && mkdir -p ~/.vim/plugin
+cd && mkdir -p ~/.vim/bundles
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-sh ./installer.sh ~/.vim/plugin
-cp ../dot_files/vimrc.txt ~/.vimrc
-rm installer.sh && vim .vimrc
+sh ./installer.sh ~/.vim/bundles
+cd - && cp ../dot_files/vimrc.txt ~/.vimrc
+cd && rm installer.sh && vim .vimrc
