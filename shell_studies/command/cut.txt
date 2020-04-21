@@ -3,4 +3,4 @@
         This mean show the content of the file above, cut off (split by the 
         word) by : and only show field 7. Add other number to show other field 
         rember to use the , between these number.
-     With cut you can cut the output as you want
+    With cut you can cut the output as you want

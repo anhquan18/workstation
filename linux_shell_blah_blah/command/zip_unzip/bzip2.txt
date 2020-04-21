@@ -1,8 +1,0 @@
-    Another command like gzip in order to zip and unzip. The compression ratio of bzip2 is more efficiently than gzip so the size after zipped will be smaller than gzip.
-    But, the time used to zip, unzip will be longer than gzip as well. So it only used when you want make the zipped file as small as you can
-
-    Use:
-    bzip2 <file_name>
-    
-    And then a .bz2 file will be created. The way you use bzip2 is the same as gzip so you can easily use it.
-    And of course it will have the bunzip2 like gunzip as well and -c option like gzip

@@ -1,5 +1,0 @@
-    Red hat based system's package manager is RPM (Redhat package manager) but rpm is too simple and can't do complicated things now we have 
-    a more powerful command called yum
-    yum:
-
-    apt:

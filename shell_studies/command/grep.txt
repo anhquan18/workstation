@@ -1,5 +1,8 @@
-    A powerful command that help you search str in linux (remember it only search inside the file
-    or the output you can't search it with dir or ps that is why we use it with pipe line)
+############################
+    A powerful command that help you search str in linux 
+(It only search inside the file or the output. 
+ You can't search it with dir or ps that is why we use it with pipe line)
+############################
     Use:
         grep [option] <pattern> <file_name>
         

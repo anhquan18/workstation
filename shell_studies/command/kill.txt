@@ -1,5 +1,6 @@
-    kill command is not a command to shutdown other proccess it is a command
-that send signal
+###################
+    kill command is not a command to shutdown other proccess it is a command that send signal
+###################
 
     In linux signal are things that you send to ps, terminated, stopped, 
     run again, by sending signal like this you can connect ps to ps that

@@ -1,5 +1,6 @@
-    Use to change the file mode. In chmod you can change mode with symbol or 
-with number.
+#######################
+    Use to change the file mode. In chmod you can change mode with symbol or with number.
+#######################
     
     Caution: only the owner of the file or super user can change the mode of file
 
