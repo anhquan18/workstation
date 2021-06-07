@@ -1,5 +1,6 @@
 text: #F1BB6A
 background: #352F2F
+tempreture: #F88959
 user: #C1EE2C
 path: #D34FB0
-branch: #A88FF7
+branch: #A88FF7 / #78E325
