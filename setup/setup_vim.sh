@@ -22,5 +22,5 @@ vim --version
 cd && mkdir -p ~/.vim/bundles
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
 sh ./installer.sh ~/.vim/bundles
-cd - && cp ../dot_files/vimrc.txt ~/.vimrc
+cd ~/git/my_file/workstation/setup && cp ../dot_files/vimrc.txt ~/.vimrc
 cd && rm installer.sh && vim .vimrc
