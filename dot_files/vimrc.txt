@@ -47,15 +47,19 @@ if dein#load_state('/home/quan/.vim/bundles')
 
     " Add or remove your plugins here:
     call dein#add('scrooloose/nerdtree')
+    call dein#add('Yggdroot/indentLine')
     call dein#add('Shougo/neosnippet.vim')
     call dein#add('Shougo/neosnippet-snippets')
-    call dein#add('Shougo/neocomplete.vim')
     call dein#add('tpope/vim-fugitive')
-    call dein#add('Yggdroot/indentLine')
+    call dein#add('Shougo/deoplete.nvim')
+
+    if !has('nvim')
+      call dein#add('roxma/nvim-yarp')
+      call dein#add('roxma/vim-hug-neovim-rpc')
+    endif
 
     " You can specify revision/branch/tag.
 "    call dein#add('Shougo/deol.nvim', { 'rev': 'a1b5108fd' })
-
 " Required:
    call dein#end()
      call dein#save_state()
@@ -64,27 +68,14 @@ endif
 " Required:
 filetype plugin indent on
 syntax enable
-let g:neocomplete#enable_at_startup=1
-let g:neocomplete#enable_smart_case=1
-let g:neocomplete#sources#syntax#min_keyword_lenth=2
-let gLneocomplete#lock_buffer_name_pattern='\*ku\*'
-if !exists('g:neocomplete#keyword_patterns')
-   let g:neocomplete#keyword_patterns={}
-endif
-let g:neocomplete#keyword_patterns['default']='\h\w*'
-inoremap <expr><C-g> neocomplete#undo_completion()
-inoremap <expr><C-l> neocomplete#complete_common_string()
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-"inoremap <expr><CR>  neocomplete#smart_close_popup()."\<CR>"
-inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><CR>  pumvisible() ? neocomplete#close_popup( ):"<CR>"
 
 " If you want to install not installed plugins on startup.
 if dein#check_install()
     call dein#install()
 endif
 
-let g:NERDTreeWinSize=50  " Set NERDTree width.
+let g:deoplete#enable_at_startup = 1
+let g:NERDTreeWinSize=20  " Set NERDTree width.
 autocmd VIMEnter * NERDTree .           " Open NERDTree at startup.
 au VimEnter * wincmd l    " Remove focus from NERDTree window at startup.
 
