@@ -9,3 +9,5 @@ alias cbas='cd ~/ && cp .bashrc bashrc.txt && mv bashrc.txt ~/git/my_file/workst
 alias mkbas='mv ~/git/my_file/workstation/linux_shell_blah_blah/bash/bashrc.txt ~/ && cd ~/ && mv bashrc.txt .bashrc && cd -'
 alias profile='vim ~/.bash_profile'
 alias ali='vim ~/.bash_aliases'
+alias gitlab-config='git config user.name "N.Quan" && git config user.email n.quan@work-robotics.co.jp'
+alias github-config='git config user.name "anhquan18" && git config user.email quan181219@gmail.com' 
