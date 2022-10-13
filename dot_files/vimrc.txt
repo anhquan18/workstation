@@ -52,6 +52,7 @@ if dein#load_state('/home/quan/.vim/bundles')
     call dein#add('Shougo/neosnippet-snippets')
     call dein#add('tpope/vim-fugitive')
     call dein#add('Shougo/deoplete.nvim')
+    call dein#add('deoplete-plugins/deoplete-jedi')
 
     if !has('nvim')
       call dein#add('roxma/nvim-yarp')
