@@ -29,6 +29,14 @@ nmap DT :NERDTree<CR>
 nmap mm <C-w>w
 nmap mp <C-w>p
 
+"change page size with Alt+ArrowKey
+nmap <A-Up> <C-w>+
+nmap <A-Down> <C-w>-
+nmap <A-Left> <C-w>>
+nmap <A-Right> <C-w><
+
+
+
 "dein Scripts-----------------------------
 if &compatible
     set nocompatible               " Be iMproved
