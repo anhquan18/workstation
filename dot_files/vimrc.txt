@@ -61,6 +61,8 @@ if dein#load_state('/home/quan/.vim/bundles')
     call dein#add('tpope/vim-fugitive')
     call dein#add('Shougo/deoplete.nvim')
     call dein#add('deoplete-plugins/deoplete-jedi')
+    call dein#add('iamcco/markdown-preview.nvim', {'on_ft': ['markdown', 'pandoc.markdown', 'rmd'],
+                        \ 'build': 'sh -c "cd app && yarn install"' })
 
     if !has('nvim')
       call dein#add('roxma/nvim-yarp')
@@ -82,6 +84,13 @@ syntax enable
 if dein#check_install()
     call dein#install()
 endif
+
+let g:mkdp_auto_start = 0
+let g:mkdp_auto_close = 1
+let g:mkdp_refresh_slow = 0
+let g:mkdp_command_for_global = 0
+let g:mkdp_open_to_the_world = 0
+let g:mkdp_echo_preview_url = 1
 
 let g:deoplete#enable_at_startup = 1
 let g:NERDTreeWinSize=20  " Set NERDTree width.
