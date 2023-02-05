@@ -8,8 +8,12 @@ sudo apt upgrade -y
 # dconf write /org/gnome/desktop/input-sources/xkb-options "['caps:escape']"
 
 # Install necessary library and tools
-sudo apt install -y tmux python3 python3-pip curl build-essential libgtk-3-dev easystroke python3-catkin-tools htop
 
+sudo apt install -y tmux python3 python3-pip curl build-essential libgtk-3-dev easystroke htop
+
+# Ubuntu22.04 -> python3-catkin
+sudo apt install -y python3-catkin-tools
+# Install python3 package
 sudo python3 -m pip install pandas scipy matplotlib numpy tk opencv-python tqdm osrf-pycommon neovim pynvim
 
 # setup shell
