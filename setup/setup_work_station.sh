@@ -9,10 +9,11 @@ sudo apt upgrade -y
 
 # Install necessary library and tools
 
-sudo apt install -y tmux python3 python3-pip curl build-essential libgtk-3-dev easystroke htop
+sudo apt install -y tmux python3 python3-pip curl build-essential libgtk-3-dev easystroke htop tree
 
 # Ubuntu22.04 -> python3-catkin
 sudo apt install -y python3-catkin-tools
+
 # Install python3 package
 sudo python3 -m pip install pandas scipy matplotlib numpy tk opencv-python tqdm osrf-pycommon neovim pynvim
 
