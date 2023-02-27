@@ -1,18 +1,21 @@
-set nu           "set number"
-set sw=4         "set shiftwidth -indent level- into 4 space" 
-set ruler        "display cursor position on the last line of the screen"
-set showcmd      "show partial command"
-set ts=4         "converted tabstop into four spaces"
-set showmatch    "set show matching parenthesis"
-set incsearch    "show search matches as you type"
-set ai           "Auto indent level"
-set si           "set smart indent"
-set expandtab    "turn tab to spaces"
-set smartcase    "try to be smart when search"
-set hlsearch     "hight light search result"
-set incsearch    "make search act like search in modern browser"
-syntax enable    "enable syntax"
-set so=31        "set lines between cursor and bar at least be 6"
+set nu             "set number"
+set sw=4           "set shiftwidth -indent level- into 4 space" 
+set ruler          "display cursor position on the last line of the screen"
+set showcmd        "show partial command"
+set ts=4           "converted tabstop into four spaces"
+set showmatch      "set show matching parenthesis"
+set incsearch      "show search matches as you type"
+set nosmartindent  "remove smart indent, the following line will restore indent after commentout"
+set cindent
+set cinkeys-=0#
+set indentkeys-=0#
+set si             "set smart indent"
+set expandtab      "turn tab to spaces"
+set smartcase      "try to be smart when search"
+set hlsearch       "hight light search result"
+set incsearch      "make search act like search in modern browser"
+syntax enable      "enable syntax"
+set so=31          "set lines between cursor and bar at least be 6"
 set backspace=indent,eol,start
 set completeopt-=preview
 set cursorline
@@ -41,10 +44,10 @@ nmap <A-Right> <C-w><
 set nocompatible
 
 " Set Dein base path (required)
-let s:dein_base = '~/.vim/bundle'
+let s:dein_base = '/home/qua/.vim/bundle'
 
 " Set Dein source path (required)
-let s:dein_src = '~/.vim/bundle/repos/github.com/Shougo/dein.vim'
+let s:dein_src = '/home/qua/.vim/bundle/repos/github.com/Shougo/dein.vim'
 
 " Set Dein runtime path (required)
 execute 'set runtimepath+=' . s:dein_src
