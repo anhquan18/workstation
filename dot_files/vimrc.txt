@@ -65,6 +65,7 @@ call dein#add('Shougo/neosnippet-snippets')
 call dein#add('tpope/vim-fugitive')
 call dein#add('Shougo/deoplete.nvim')
 call dein#add('deoplete-plugins/deoplete-jedi')
+call dein#add('lervag/vimtex')
 call dein#add('iamcco/markdown-preview.nvim', {'on_ft': ['markdown', 'pandoc.markdown', 'rmd'],
                     \ 'build': 'sh -c "cd app && yarn install"' })
 
@@ -104,6 +105,23 @@ let g:deoplete#enable_at_startup = 1
 let g:NERDTreeWinSize=20  " Set NERDTree width.
 autocmd VIMEnter * NERDTree .           " Open NERDTree at startup.
 au VimEnter * wincmd l    " Remove focus from NERDTree window at startup.
+
+filetype plugin indent on
+syntax enable
+let g:tex_flavor = "latex"
+let g:vimtex_imaps_enabled = 0
+let g:vimtex_compiler_latexmk = {
+      \ 'background': 1,
+      \ 'build_dir': '',
+      \ 'continuous': 1,
+      \ 'options': [
+      \    '-pdfdvi', 
+      \    '-verbose',
+      \    '-file-line-error',
+      \    '-synctex=1',
+      \    '-interaction=nonstopmode',
+      \],
+      \}
 
 "End dein Scripts-------------------------
 
