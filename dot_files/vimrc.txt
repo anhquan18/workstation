@@ -21,9 +21,6 @@ set completeopt-=preview
 set cursorline
 hi Cursorline term=bold cterm=bold ctermbg=darkgray guibg=Grey40
 
-"let &foldcolumn = (&columns - &textwidth)
-"hi VertSplit guifg=bg guibg=NONE gui=NONE
-"execute 'topleft' ((&columns - &textwidth) / 2 - 1) . 'vsplit _paddding_' | wincmd p
 
 nmap tt :terminal<CR>
 nmap sp :split<CR>
@@ -44,10 +41,10 @@ nmap <A-Right> <C-w><
 set nocompatible
 
 " Set Dein base path (required)
-let s:dein_base = '~/.vim/bundle'
+let s:dein_base = '/home/quan/.vim/bundles'
 
 " Set Dein source path (required)
-let s:dein_src = '~/.vim/bundle/repos/github.com/Shougo/dein.vim'
+let s:dein_src = '/home/quan/.vim/bundles/repos/github.com/Shougo/dein.vim'
 
 " Set Dein runtime path (required)
 execute 'set runtimepath+=' . s:dein_src
@@ -68,10 +65,9 @@ call dein#add('deoplete-plugins/deoplete-jedi')
 call dein#add('lervag/vimtex')
 call dein#add('iamcco/markdown-preview.nvim', {'on_ft': ['markdown', 'pandoc.markdown', 'rmd'],
                     \ 'build': 'sh -c "cd app && yarn install"' })
-
 if !has('nvim')
-  call dein#add('roxma/nvim-yarp')
-  call dein#add('roxma/vim-hug-neovim-rpc')
+    call dein#add('roxma/nvim-yarp')
+    call dein#add('roxma/vim-hug-neovim-rpc')
 endif
 
 " Finish Dein initialization (required)
@@ -94,6 +90,8 @@ if dein#check_install()
  call dein#install()
 endif
 
+" vim plugins configurations
+let g:python3_host_prog = '/usr/bin/python3'
 let g:mkdp_auto_start = 0
 let g:mkdp_auto_close = 1
 let g:mkdp_refresh_slow = 0
@@ -115,7 +113,7 @@ let g:vimtex_compiler_latexmk = {
       \ 'build_dir': '',
       \ 'continuous': 1,
       \ 'options': [
-      \    '-pdfdvi', 
+      \    '-pdfdvi',
       \    '-verbose',
       \    '-file-line-error',
       \    '-synctex=1',
@@ -124,4 +122,3 @@ let g:vimtex_compiler_latexmk = {
       \}
 
 "End dein Scripts-------------------------
-
