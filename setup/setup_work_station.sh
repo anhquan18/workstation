@@ -15,7 +15,7 @@ sudo apt install -y tmux python3 python3-pip curl build-essential libgtk-3-dev e
 sudo apt install -y python3-catkin-tools
 
 # Install python3 package
-sudo python3 -m pip install pandas scipy matplotlib numpy tk opencv-python tqdm osrf-pycommon neovim pynvim graphviz tqdm
+sudo python3 -m pip install --user pandas scipy matplotlib numpy tk opencv-python tqdm osrf-pycommon neovim pynvim graphviz tqdm
 
 # setup shell
 cp ../dot_files/bashrc.txt ~/.bashrc
