@@ -44,10 +44,10 @@ nmap <A-Right> <C-w><
 set nocompatible
 
 " Set Dein base path (required)
-let s:dein_base = '/home/qua/.vim/bundle'
+let s:dein_base = '~/.vim/bundle'
 
 " Set Dein source path (required)
-let s:dein_src = '/home/qua/.vim/bundle/repos/github.com/Shougo/dein.vim'
+let s:dein_src = '~/.vim/bundle/repos/github.com/Shougo/dein.vim'
 
 " Set Dein runtime path (required)
 execute 'set runtimepath+=' . s:dein_src
