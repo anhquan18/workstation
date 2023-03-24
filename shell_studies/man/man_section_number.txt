@@ -1,4 +1,4 @@
-    Use the man -k to search the keyword you want to find (Ex: man -k keyword)
+Use the man -k to search the keyword you want to find (Ex: man -k keyword)
 after that there are a number inside the () that stand for each section in linux
 
 1: command
@@ -11,8 +11,8 @@ after that there are a number inside the () that stand for each section in linux
 8: system management's command
 9: Kernel Ruhen
 
-    User can also use the command: man section'snumber name, to search
-    (Ex: man 1 cat)
+User can also use the command: man section'snumber name, to search
+(Ex: man 1 cat)
 
-    Use this command to search section's number and the path:
-    man -wa name (Ex: man -wa cat)
+Use this command to search section's number and the path:
+man -wa name (Ex: man -wa cat)
